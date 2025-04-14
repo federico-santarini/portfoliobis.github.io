@@ -1,0 +1,212 @@
+@font-face {
+    font-family: 'TCFranklinGothic';
+    src: url('assets/static/fonts/ITCFranklinGothicStd-Book.woff2') format('woff2'),
+        url('assets/static/fonts/ITCFranklinGothicStd-Book.woff') format('woff');
+    font-weight: 400;
+    /* Regular */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TCFranklinGothic';
+    src: url('assets/static/fonts/ITCFranklinGothicStd-Med.woff2') format('woff2'),
+        url('assets/static/fonts/ITCFranklinGothicStd-Med.woff') format('woff');
+    font-weight: 500;
+    /* Regular */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TCFranklinGothic';
+    src: url('assets/static/fonts/ITCFranklinGothicStd-Demi.woff2') format('woff2'),
+        url('assets/static/fonts/ITCFranklinGothicStd-Demi.woff') format('woff');
+    font-weight: 600;
+    /* Regular */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TCFranklinGothic';
+    src: url('assets/static/fonts/ITCFranklinGothicStd-Hvy.woff2') format('woff2'),
+        url('assets/static/fonts/ITCFranklinGothicStd-Hvy.woff') format('woff');
+    font-weight: 700;
+    /* Regular */
+    font-style: normal;
+}
+
+:root {
+    --main-bg-color: #f5f5dc;
+    /* Light grey background */
+    --hover-color: #75752F;
+    /* Dark text color */
+}
+
+/* Bootstrap Breakpoints Media Queries */
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query needed here as this is the default */
+html {
+    font-family: 'TCFranklinGothic', sans-serif !important;
+    font-size: 13px !important;
+}
+
+body,
+.navbar {
+    background-color: var(--main-bg-color) !important;
+    /* Change to any color you want */
+}
+
+/* Flexbox wrapper to ensure the footer is pushed to the bottom */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Ensure full viewport height */
+}
+
+main {
+    flex: 1;
+    /* Makes main content push the footer down */
+    /* padding-top: 70px; */
+}
+
+footer p {
+    /* Dark footer */
+    padding: 10px 0;
+    border-top: 1px solid var(--hover-color);
+    color: var(--hover-color);
+}
+
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– NAVBAR */
+a.nav-link,
+a.navbar-brand {
+    font-size: 1.23rem;
+    color: black;
+}
+
+a.nav-link:hover,
+a.navbar-brand:hover {
+    font-size: 1.23rem;
+    color: var(--hover-color);
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– INDEX PAGE */
+
+h3.headline {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– PROJECTS ARCHIVE PAGE */
+table.projects-archive tr,
+td,
+th {
+    background-color: var(--main-bg-color) !important;
+}
+
+table.projects-archive td {
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+    overflow: hidden;
+    /* Hide overflowing content */
+    text-overflow: ellipsis;
+    /* Show "..." when text is cut off */
+}
+
+
+table.projects-archive {
+    border: 1px black;
+    background-color: var(--main-bg-color) !important;
+}
+
+table.projects-archive thead tr th {
+    font-weight: 400 !important;
+    font-size: 13px !important;
+}
+
+table.projects-archive tbody {
+    font-size: 1.23rem !important;
+}
+
+table.projects-archive tr {
+    cursor: pointer;
+}
+
+table.projects-archive tr:hover td {
+    color: var(--hover-color) !important;
+    /* Makes text grey on hover */
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– PROJECT PAGE */
+
+h3.project-title {
+    font-weight: 400 !important;
+    font-size: 2.15rem !important;
+}
+
+table.project-info {
+    border: 1px;
+}
+
+table.project-info tbody {
+    font-size: 13px !important;
+
+}
+
+table.project-info tbody tr td a {
+    text-decoration: none;
+    color: black;
+}
+
+table.project-info tbody tr td a:hover {
+    text-decoration: none;
+    color: var(--hover-color);
+}
+
+p.description {
+    font-size: 1.13rem !important;
+    line-height: 1.35 !important;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    /* Styles for small devices */
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    /* Styles for medium devices */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    /* Styles for large devices */
+    /* –––––––––––––––––––––––––––––––––––––––––––––––––– INDEX PAGE */
+
+    h3.headline {
+        font-size: 1.7rem;
+        font-weight: 400;
+        line-height: 1.35;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /* Styles for extra large devices */
+}
+
+/* Extra extra large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    /* Styles for extra extra large devices */
+}
+
+table tbody {
+    font-size: 1.23rem !important;
+}

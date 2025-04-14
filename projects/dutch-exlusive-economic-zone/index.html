@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../static/style.css">
+    <!-- Add this in your <head> tag to include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+</head>
+
+<body>
+  <div class="wrapper">
+      <header>
+          <nav class="navbar navbar-expand-lg p-3">
+              <div class="container-fluid">
+                  <a class="navbar-brand" href="../../">Federico Santarini</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                          
+                          <li class="nav-item">
+                              <a class="nav-link"  class="active" 
+                                  href="../">Projects Archive</a>
+                          </li>
+                          
+                          <li class="nav-item">
+                              <a class="nav-link" 
+                                  href="../../about/">About</a>
+                          </li>
+                          
+                      </ul>
+                  </div>
+              </div>
+          </nav>      
+      </header>
+
+      <main class="container-fluid p-4">
+          
+<div class="">
+
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      
+      
+
+        
+        
+          <div class="carousel-item active">
+            <img loading="lazy" src="dutch-exlusive-economic-zone01.jpg" alt="" class="d-block w-100 active">
+          </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+          <div class="carousel-item">
+            <img loading="lazy" src="dutch-exlusive-economic-zone02.jpg" alt="" class="d-block w-100 active">
+          </div>
+        
+        
+        
+          <div class="carousel-item">
+            <img loading="lazy" src="dutch-exlusive-economic-zone03.jpg" alt="" class="d-block w-100 active">
+          </div>
+        
+        
+        
+          <div class="carousel-item">
+            <img loading="lazy" src="dutch-exlusive-economic-zone04.jpg" alt="" class="d-block w-100 active">
+          </div>
+        
+        
+        
+          <div class="carousel-item">
+            <img loading="lazy" src="dutch-exlusive-economic-zone05.jpg" alt="" class="d-block w-100 active">
+          </div>
+        
+        
+        
+          <div class="carousel-item">
+            <img loading="lazy" src="dutch-exlusive-economic-zone06.jpg" alt="" class="d-block w-100 active">
+          </div>
+        
+        
+        
+          <div class="carousel-item">
+            <img loading="lazy" src="dutch-exlusive-economic-zone07.jpg" alt="" class="d-block w-100 active">
+          </div>
+        
+        
+
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <p id="slideCounter" class="text-end mt-2">x/x</p>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const carousel = document.querySelector('#carouselExample');
+    const totalSlides = document.querySelectorAll('.carousel-item').length;
+    const counter = document.querySelector('#slideCounter');
+
+    function updateCounter(index) {
+      counter.innerText = `${index + 1}/${totalSlides}`;
+    }
+
+    // Initialize counter on page load
+    let initialIndex = document.querySelector('.carousel-item.active').dataset.bsSlideTo || 0;
+    updateCounter(parseInt(initialIndex));
+
+    // Listen to carousel slide change event
+    carousel.addEventListener('slid.bs.carousel', (event) => {
+      updateCounter(event.to);
+    });
+  });
+</script>
+    <div class="row mb-4">
+      <div class="col">
+        <h3 class="project-title">Dutch Exlusive Economic Zone</h3>
+      </div>
+    </div>
+   
+    <div class="row">
+      <div class="col-12 col-lg-10 col-xl-8 col-xxl-7">
+        <p class="description">This two-channel video work examines the Dutch Exclusive Economic Zone (EEZ) through a dual-cartography approach: one spatial, one legal. The EEZ refers to the sea area over which the Netherlands holds special rights for exploration, resource use, and economic development. Within this zone, the principle of multi-use space is central, requiring a high degree of coordination between industries, government bodies, and environmental interests.
+<br><br>
+The project visualizes this layered governance structure by juxtaposing the physical characteristics of the zone with its administrative and legal divisions. The first video channel presents a cartographic overview of the North Sea, highlighting zones designated for shipping, wind farms, military exercises, and ecological protection. The second channel overlays this with the legal architecture—permits, regulations, and overlapping jurisdictions—that defines how space is negotiated and used.
+<br><br>
+By splitting the representation into two parallel timelines, the video underlines the complexity involved in maritime spatial planning. It reveals how legal structures, often invisible in traditional cartography, are essential to understanding how such environments are occupied, managed, and contested.
+<br><br>
+The work uses archival data, open-source mapping tools, and visual abstraction to explore how regulatory frameworks operate as spatial interventions. Rather than simplifying the North Sea into a fixed image, the video highlights its status as a dynamic environment shaped equally by natural geography and human decision-making. This dual-channel format enables a layered reading of marine territory, emphasizing how legal constructs directly influence spatial and ecological outcomes.
+</p>
+      </div>
+      <div class="col-12 d-none d-xxl-block col-xxl-2">
+
+      </div>
+      <div class="col-12 col-lg-10 col-xl-4 col-xxl-3">
+        <table class="table project-info">
+          <tbody>
+            
+            <tr>
+              <td class="col-6">Client</td>
+              <td class="col-6">Self Initiated</td>
+            </tr>
+            
+
+            
+            <tr>
+              <td class="col-6">Location</td>
+              <td class="col-6">Eindhoven</td>
+            </tr>
+            
+
+            
+            <tr>
+              <td class="col-6">Year</td>
+              <td class="col-6">2019</td>
+            </tr>
+            
+            
+            
+            <tr>
+              <td class="col-6">Website</td>
+              <td class="col-6"><a target="_blank" href="https://www.youtube.com/watch?v=gV1-YXzB-4I">www.youtube.com</a>              </td>
+            </tr>
+            
+            
+            
+
+            
+            <tr>
+              <td class="col-6">Fields</td>
+              <td class="col-6">Cartography<br>Data Journalism<br>Information Design</td>
+            </tr>
+            
+
+            
+            <tr>
+              <td class="col-6">Tools</td>
+              <td class="col-6">QGIS<br>Adobe Illustrator<br>Adobe After Effects</td>
+            </tr>
+            
+
+            
+
+          </tbody>
+        </table>
+        <!-- 
+        <dl>
+          <dt>Date
+          <dd>Jan 31, 2019
+          
+          <dt>Website
+          <dd><a href="https://www.youtube.com/watch?v=gV1-YXzB-4I">www.youtube.com</a>
+          
+          <dt>Project type
+          <dd>Cartography
+        </dl> -->
+      </div>
+    </div>
+
+
+      </main>
+
+      <footer class="container-fluid p-4" >
+        <p> &copy; 2025 Federico Santarini</p>
+      </footer>
+  </div>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQ+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+
+</html>

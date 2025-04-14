@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../static/style.css">
+    <!-- Add this in your <head> tag to include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+</head>
+
+<body>
+  <div class="wrapper">
+      <header>
+          <nav class="navbar navbar-expand-lg p-3">
+              <div class="container-fluid">
+                  <a class="navbar-brand" href="../../">Federico Santarini</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                          
+                          <li class="nav-item">
+                              <a class="nav-link"  class="active" 
+                                  href="../">Projects Archive</a>
+                          </li>
+                          
+                          <li class="nav-item">
+                              <a class="nav-link" 
+                                  href="../../about/">About</a>
+                          </li>
+                          
+                      </ul>
+                  </div>
+              </div>
+          </nav>      
+      </header>
+
+      <main class="container-fluid p-4">
+          
+<div class="">
+
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      
+      
+
+        
+        
+          <div class="carousel-item active">
+            <img loading="lazy" src="dae-2024-graduation-catalogue-index01.jpg" alt="" class="d-block w-100 active">
+          </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+          <div class="carousel-item">
+            <img loading="lazy" src="dae-2024-graduation-catalogue-index02.jpg" alt="" class="d-block w-100 active">
+          </div>
+        
+        
+        
+          <div class="carousel-item">
+            <img loading="lazy" src="dae-2024-graduation-catalogue-index03.jpg" alt="" class="d-block w-100 active">
+          </div>
+        
+        
+        
+          <div class="carousel-item">
+            <img loading="lazy" src="dae-2024-graduation-catalogue-index04.jpg" alt="" class="d-block w-100 active">
+          </div>
+        
+        
+        
+          <div class="carousel-item">
+            <img loading="lazy" src="dae-2024-graduation-catalogue-index05.jpg" alt="" class="d-block w-100 active">
+          </div>
+        
+        
+        
+          <div class="carousel-item">
+            <img loading="lazy" src="dae-2024-graduation-catalogue-index06.jpg" alt="" class="d-block w-100 active">
+          </div>
+        
+        
+        
+          <div class="carousel-item">
+            <img loading="lazy" src="dae-2024-graduation-catalogue-index07.jpg" alt="" class="d-block w-100 active">
+          </div>
+        
+        
+        
+          <div class="carousel-item">
+            <img loading="lazy" src="dae-2024-graduation-catalogue-index08.jpg" alt="" class="d-block w-100 active">
+          </div>
+        
+        
+
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <p id="slideCounter" class="text-end mt-2">x/x</p>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const carousel = document.querySelector('#carouselExample');
+    const totalSlides = document.querySelectorAll('.carousel-item').length;
+    const counter = document.querySelector('#slideCounter');
+
+    function updateCounter(index) {
+      counter.innerText = `${index + 1}/${totalSlides}`;
+    }
+
+    // Initialize counter on page load
+    let initialIndex = document.querySelector('.carousel-item.active').dataset.bsSlideTo || 0;
+    updateCounter(parseInt(initialIndex));
+
+    // Listen to carousel slide change event
+    carousel.addEventListener('slid.bs.carousel', (event) => {
+      updateCounter(event.to);
+    });
+  });
+</script>
+    <div class="row mb-4">
+      <div class="col">
+        <h3 class="project-title">DAE 2024 Graduation Catalogue Index</h3>
+      </div>
+    </div>
+   
+    <div class="row">
+      <div class="col-12 col-lg-10 col-xl-8 col-xxl-7">
+        <p class="description">This project is part of the DAE Graduation Catalogue 2024, designed by Pedro Lobo and structured around the concept of the Rhizomatic Archive—an editorial framework inspired by Deleuze and Guattari’s philosophy of non-hierarchical knowledge systems. The catalogue presents the work of nearly 200 Design Academy Eindhoven graduates.
+<br><br>The contribution to the project involved the development of a custom indexing system that visualizes and navigates the network of research themes, methodologies, and conceptual links across the projects. Instead of organizing content by department or discipline, the index maps out overlaps and affinities between individual works, foregrounding shared topics and cross-cutting concerns.
+<br><br>Each student provided six keywords to describe their project. These keywords form the basis of a structure that allows for multiple modes of reading the catalogue—linear, thematic, and associative. Through this system, readers can trace unexpected connections between projects, surfacing relationships that a traditional taxonomy might obscure.
+<br><br>By foregrounding the interconnectedness of student research, the index challenges conventional methods of categorization and reflects the distributed nature of contemporary design education. The system serves both as a navigational tool and as a form of editorial commentary, reinforcing the publication’s role as an active archive rather than a passive record.
+</p>
+      </div>
+      <div class="col-12 d-none d-xxl-block col-xxl-2">
+
+      </div>
+      <div class="col-12 col-lg-10 col-xl-4 col-xxl-3">
+        <table class="table project-info">
+          <tbody>
+            
+            <tr>
+              <td class="col-6">Client</td>
+              <td class="col-6">Design Academy Eindhoven</td>
+            </tr>
+            
+
+            
+            <tr>
+              <td class="col-6">Location</td>
+              <td class="col-6">Eindhoven</td>
+            </tr>
+            
+
+            
+            <tr>
+              <td class="col-6">Year</td>
+              <td class="col-6">2024</td>
+            </tr>
+            
+            
+            
+            
+            
+            <tr>
+              <td class="col-6">Collaborators</td>
+              <td class="col-6">Pedro Lobo (editorial design), Stijn van der Vleuten (project manager)</td>
+            </tr>
+            
+
+            
+            <tr>
+              <td class="col-6">Fields</td>
+              <td class="col-6">Data Analysis</td>
+            </tr>
+            
+
+            
+            <tr>
+              <td class="col-6">Tools</td>
+              <td class="col-6">Python</td>
+            </tr>
+            
+
+            
+            <tr>
+              <td class="col-6">Photography</td>
+              <td class="col-6">Ronald Smiths</td>
+            </tr>
+            
+
+          </tbody>
+        </table>
+        <!-- 
+        <dl>
+          <dt>Date
+          <dd>Oct 1, 2024
+          
+          <dt>Project type
+          <dd>data analysis
+        </dl> -->
+      </div>
+    </div>
+
+
+      </main>
+
+      <footer class="container-fluid p-4" >
+        <p> &copy; 2025 Federico Santarini</p>
+      </footer>
+  </div>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQ+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+
+</html>

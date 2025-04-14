@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../static/style.css">
+    <!-- Add this in your <head> tag to include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+</head>
+
+<body>
+  <div class="wrapper">
+      <header>
+          <nav class="navbar navbar-expand-lg p-3">
+              <div class="container-fluid">
+                  <a class="navbar-brand" href="../../">Federico Santarini</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                          
+                          <li class="nav-item">
+                              <a class="nav-link"  class="active" 
+                                  href="../">Projects Archive</a>
+                          </li>
+                          
+                          <li class="nav-item">
+                              <a class="nav-link" 
+                                  href="../../about/">About</a>
+                          </li>
+                          
+                      </ul>
+                  </div>
+              </div>
+          </nav>      
+      </header>
+
+      <main class="container-fluid p-4">
+          
+<div class="">
+
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      
+      
+
+        
+        
+          <div class="carousel-item active">
+            <img loading="lazy" src="bitcoin-energyelectricity-consumpion01.jpg" alt="" class="d-block w-100 active">
+          </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+          <div class="carousel-item">
+            <img loading="lazy" src="bitcoin-energyelectricity-consumpion02.jpg" alt="" class="d-block w-100 active">
+          </div>
+        
+        
+        
+          <div class="carousel-item">
+            <img loading="lazy" src="bitcoin-energyelectricity-consumpion03.jpg" alt="" class="d-block w-100 active">
+          </div>
+        
+        
+        
+          <div class="carousel-item">
+            <img loading="lazy" src="bitcoin-energyelectricity-consumpion04.jpg" alt="" class="d-block w-100 active">
+          </div>
+        
+        
+        
+          <div class="carousel-item">
+            <img loading="lazy" src="bitcoin-energyelectricity-consumpion05.jpg" alt="" class="d-block w-100 active">
+          </div>
+        
+        
+
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <p id="slideCounter" class="text-end mt-2">x/x</p>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const carousel = document.querySelector('#carouselExample');
+    const totalSlides = document.querySelectorAll('.carousel-item').length;
+    const counter = document.querySelector('#slideCounter');
+
+    function updateCounter(index) {
+      counter.innerText = `${index + 1}/${totalSlides}`;
+    }
+
+    // Initialize counter on page load
+    let initialIndex = document.querySelector('.carousel-item.active').dataset.bsSlideTo || 0;
+    updateCounter(parseInt(initialIndex));
+
+    // Listen to carousel slide change event
+    carousel.addEventListener('slid.bs.carousel', (event) => {
+      updateCounter(event.to);
+    });
+  });
+</script>
+    <div class="row mb-4">
+      <div class="col">
+        <h3 class="project-title">Bitcoin Energy/Electricity Consumpion</h3>
+      </div>
+    </div>
+   
+    <div class="row">
+      <div class="col-12 col-lg-10 col-xl-8 col-xxl-7">
+        <p class="description">In 2017, Alex de Vries (Digiconomist) published the "Bitcoin Energy Consumption Index," an article quantifying Bitcoin’s electricity consumption. Soon after, Marc Bevand critiqued the methodology in his blog post "Serious Faults in Digiconomist's Bitcoin Energy Consumption Index," offering a revised model. This project presents a transposition of Digiconomist’s model, using it as a basis for visual and structural interpretation of Bitcoin’s energy footprint.
+<br><br>
+The work is structured on two layers. The first is a direct formalization of the energy consumption model—translating economic estimations into visual form. The second layer interrogates how slight variations between two technical narratives, both claiming authority on the same topic, can lead to divergent interpretations. This dual structure draws attention to the difficulty an external observer may face in validating or comparing models within a highly technical field.
+<br><br>
+Rather than proposing a definitive stance, the project reflects on how knowledge is constructed and presented, especially when layered with economic, ethical, and environmental implications. It uses the case of Bitcoin as an example of how conflicting interpretations can stem not just from differing opinions but from divergent methods of framing data, assumptions, and uncertainty.
+</p>
+      </div>
+      <div class="col-12 d-none d-xxl-block col-xxl-2">
+
+      </div>
+      <div class="col-12 col-lg-10 col-xl-4 col-xxl-3">
+        <table class="table project-info">
+          <tbody>
+            
+            <tr>
+              <td class="col-6">Client</td>
+              <td class="col-6">Self-initiated</td>
+            </tr>
+            
+
+            
+            <tr>
+              <td class="col-6">Location</td>
+              <td class="col-6">Eindhoven</td>
+            </tr>
+            
+
+            
+            <tr>
+              <td class="col-6">Year</td>
+              <td class="col-6">2018</td>
+            </tr>
+            
+            
+            
+            
+            
+
+            
+            <tr>
+              <td class="col-6">Fields</td>
+              <td class="col-6">Information Design<br>Editorial Design</td>
+            </tr>
+            
+
+            
+            <tr>
+              <td class="col-6">Tools</td>
+              <td class="col-6">Adobe InDesign</td>
+            </tr>
+            
+
+            
+
+          </tbody>
+        </table>
+        <!-- 
+        <dl>
+          <dt>Date
+          <dd>Jan 31, 2018
+          
+          <dt>Project type
+          <dd>Editorial Design
+        </dl> -->
+      </div>
+    </div>
+
+
+      </main>
+
+      <footer class="container-fluid p-4" >
+        <p> &copy; 2025 Federico Santarini</p>
+      </footer>
+  </div>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQ+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+
+</html>
